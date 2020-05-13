@@ -14,3 +14,14 @@ class Card
     end
 end
 
+class Hearts < Card
+end
+
+class Spades < Card
+end
+
+class Diamonds < Card
+end
+
+class Clubs < Card
+end
