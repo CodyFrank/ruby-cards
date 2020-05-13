@@ -14,14 +14,33 @@ class Card
     end
 end
 
+
 class Hearts < Card
+    def initialize (face = nil)
+        super(face)
+        @color = "Red"
+    end
 end
 
 class Spades < Card
+    def initialize (face = nil)
+        super(face)
+        @color = "Black"
+    end
 end
 
 class Diamonds < Card
+    def initialize (face = nil)
+        super(face)
+        @color = "Red"
+    end
 end
 
 class Clubs < Card
+    def initialize (face = nil)
+        super(face)
+        @color = "Black"
+    end
 end
+
+binding.pry
