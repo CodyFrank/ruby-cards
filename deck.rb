@@ -2,9 +2,13 @@ require "./cards.rb"
 require "pry"
 
 class Deck
+    @@count = 0
+
     attr_reader :cards
+
     def initialize
         @cards = []
+        @@count += 1
         counter = 1
         until counter == 14 do
             if counter == 1
@@ -25,6 +29,10 @@ class Deck
             counter += 1
         end
 
+    end
+
+    def self.count
+        @@count
     end
 end
 
