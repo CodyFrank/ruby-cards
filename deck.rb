@@ -6,14 +6,14 @@ class Deck
     def initialize
         @cards = []
         counter = 1
-        until counter == 13 do
+        until counter == 14 do
             if counter == 1
                 face = "ace"
-            elsif counter == 10
-                face = "jack"
             elsif counter == 11
-                face = "queen"
+                face = "jack"
             elsif counter == 12
+                face = "queen"
+            elsif counter == 13
                 face = "king"
             else
                 face = counter.to_s
