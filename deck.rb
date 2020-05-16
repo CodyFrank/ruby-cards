@@ -7,6 +7,7 @@ class Deck
     attr_reader :cards
 
     def initialize
+        
         @cards = []
         @@count += 1
         counter = 1
