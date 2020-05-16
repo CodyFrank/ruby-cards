@@ -42,5 +42,3 @@ class Clubs < Card
         @color = "Black"
     end
 end
-
-binding.pry
