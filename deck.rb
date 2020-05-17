@@ -7,7 +7,6 @@ class Deck
     attr_reader :cards
 
     def initialize
-        
         @cards = []
         @@count += 1
         counter = 1
@@ -30,6 +29,10 @@ class Deck
             counter += 1
         end
 
+    end
+
+    def randomize
+        @cards.shuffle
     end
 
     def self.count
