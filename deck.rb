@@ -34,6 +34,8 @@ class Deck
     def pro_shuffle
         7.times do
             @cards = @cards.shuffle
+            puts "shuffled"
+            puts @cards
         end
         return @cards
     end
