@@ -31,8 +31,11 @@ class Deck
 
     end
 
-    def randomize
-        @cards.shuffle
+    def pro_shuffle
+        7.times do
+            @cards = @cards.shuffle
+        end
+        return @cards
     end
 
     def self.count
